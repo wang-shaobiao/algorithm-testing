@@ -1,3 +1,4 @@
+import algorithm.basic.HeapSort;
 import algorithm.basic.QuickSort;
 import utils.RandomArrayUtils;
 
@@ -9,7 +10,7 @@ import static algorithm.basic.appliction.MergeSortSmallSum.mergeSortSmallSum;
 
 public class Test01 {
     public static void main(String[] args) {
-        ArrayList<int[]> test = RandomArrayUtils.getRandomArrayGroup(2000,1,10,5);
+        ArrayList<int[]> test = RandomArrayUtils.getRandomArrayGroup(200,1,30,10);
         Iterator<int[]> iterator = test.iterator();
         int i = 0;
         while (iterator.hasNext()) {
@@ -22,7 +23,8 @@ public class Test01 {
 //            bubbleSort(arr);
 //            insertSort(arr);
 //            mergeSort(arr);
-            QuickSort.quickSort(arr);
+//            QuickSort.quickSort(arr);
+            HeapSort.heapSort(arr);
 //            System.out.println(mergeSortSmallSum(arr));
             //*************************
             Arrays.stream(arr).forEach(a -> System.out.print(a + " "));
