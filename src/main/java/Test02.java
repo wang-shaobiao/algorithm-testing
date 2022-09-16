@@ -1,4 +1,4 @@
-import subject.practice.IsPalindromeList;
+import subject.practice.linkedlist.IsPalindromeList;
 
 public class Test02 {
     public static void main(String[] args) {

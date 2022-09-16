@@ -1,4 +1,4 @@
-package subject.practice;
+package subject.practice.linkedlist;
 
 import utils.SwapUtils;
 
